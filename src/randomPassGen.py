@@ -41,7 +41,7 @@ def randGen():
             # If data already existed
             for i in dataFile['My password']:
                 if (aboutPass.lower() in i['about'].lower()):
-                    print("Data existed in the file")
+                    print('Password is {}'.format(i['password']))
                     break
             else:
                 length = int(input("Enter the length of randomize password: "))
